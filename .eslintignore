@@ -1,0 +1,7 @@
+build
+node_modules
+seed.ts
+dist
+__mocks__
+vitest-environment-*.ts
+**/*.js

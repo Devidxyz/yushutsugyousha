@@ -1,0 +1,12 @@
+build/
+node_modules/
+git-ignored/
+temp/
+
+.env
+*.env*
+yarn-error.log
+.DS_Store
+.vscode
+
+static/*
