@@ -2,6 +2,8 @@
 
 Automatically fetch meaning, furigana, example sentence, pronunciation, and image for a Japanese word or phrase and export it as a card to Anki. Ideal for busy Japanese learners.
 
+For example:
+
 ### Input: 図書館
 
 ### Output:
