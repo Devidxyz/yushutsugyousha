@@ -118,4 +118,4 @@ The Yushutsugyousha exporter periodically checks the buffer deck for new cards a
 
 ![flow](./docs/img/flow.png)
 
-To enable it you need to set the `SCANNER` environment variable to `true` and `BUFFER_DECK_NAME` to the buffer deck's name. Optionally you can set the `SCAN_INTERVAL_MS` to a custom value, the default is 60 \* 1000 ms = 1 second.
+To enable it you need to set the `SCANNER` environment variable to `true` and `BUFFER_DECK_NAME` to the buffer deck's name. Optionally you can set the `SCAN_INTERVAL_MS` to a custom value, the default is 60 \* 1000 ms = 1 minute.
