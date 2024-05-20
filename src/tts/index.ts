@@ -20,7 +20,7 @@ export const scrapeTTS = async (word: string) => {
     `msg=${encodeURI(word)}&lang=Takumi&source=ttsmp3`
   );
 
-  if (response.data.Text === "Error") {
+  if (response.data.Text === "Error" || response.data.Error !== 0) {
     throw new Error(`error response ${JSON.stringify(response.data)}`);
   }
 
