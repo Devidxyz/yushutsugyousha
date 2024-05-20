@@ -1,6 +1,5 @@
-/* eslint-disable no-console */
-import axios from "axios";
 import logger from "../utils/logger";
+import proxyFetch from "../utils/proxyFetch";
 
 export type MakeMp3Response = {
   Error: number;
@@ -15,7 +14,7 @@ export type MakeMp3Response = {
 export const scrapeTTS = async (word: string) => {
   if (!word) return undefined;
 
-  const response = await axios.post<MakeMp3Response>(
+  const response = await proxyFetch<MakeMp3Response>(
     "https://ttsmp3.com/makemp3_new.php",
     `msg=${encodeURI(word)}&lang=Takumi&source=ttsmp3`
   );

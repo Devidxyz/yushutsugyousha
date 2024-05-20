@@ -33,4 +33,8 @@ export default {
   scanIntervalMs: process.env.SCAN_INTERVAL_MS
     ? +process.env.SCAN_INTERVAL_MS
     : 60 * 1000,
+  tor: {
+    host: process.env.TOR_HOST,
+    port: process.env.TOR_PORT,
+  },
 };
